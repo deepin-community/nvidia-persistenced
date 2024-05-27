@@ -1,4 +1,40 @@
 #!/usr/bin/make -f
 
+#export DH_VERBOSE=1
+export NV_VERBOSE=1
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+include /usr/share/dpkg/buildflags.mk
+include /usr/share/dpkg/pkg-info.mk
+
+export PREFIX		 = /usr
+export DO_STRIP		 =
+export CC_ONLY_CFLAGS	 = $(CPPFLAGS)
+export HOST_CC_ONLY_CFLAGS	 = $(CPPFLAGS)
+export OUTPUTDIR	 = _out/debian
+
+ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
+export DEBUG		 = 1
+endif
+
+
+AUTOGEN	 = debian/nvidia-persistenced.init debian/nvidia-persistenced.service
+
+debian/nvidia-persistenced.init: init/sysv/nvidia-persistenced.template
+	sed s/__USER__/nvpd/ $< > $@
+
+debian/nvidia-persistenced.service: init/systemd/nvidia-persistenced.service.template
+	sed s/__USER__/nvpd/ $< > $@
+
+
 %:
 	dh $@
+
+execute_after_dh_auto_build: $(AUTOGEN)
+	chmod -R a-sx,u=rwX,go=rX init
+
+execute_after_dh_auto_clean:
+	$(RM) $(AUTOGEN)
+	$(RM) -r _out

@@ -1,5 +1,327 @@
-template-repository (1.0-1) unstable; urgency=medium
+nvidia-persistenced (535.171.04-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 25 Mar 2024 10:51:19 +0100
+
+nvidia-persistenced (530.41.03-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Switch B-D from pkg-config to pkgconf.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 19 Mar 2024 17:59:21 +0100
+
+nvidia-persistenced (525.147.05-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update the list of supported drivers.
+
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 26 Jan 2024 23:34:41 +0100
+
+nvidia-persistenced (525.85.05-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 09 Feb 2023 10:47:31 +0100
+
+nvidia-persistenced (520.56.06-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 02 Feb 2023 10:56:50 +0100
+
+nvidia-persistenced (515.86.01-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 28 Jan 2023 02:57:55 +0100
+
+nvidia-persistenced (510.108.03-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update the list of supported drivers.
+  * Do not build for armhf and i386.
+  * Bump Standards-Version to 4.6.2. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 05 Jan 2023 11:53:16 +0100
+
+nvidia-persistenced (510.85.02-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 05 Oct 2022 16:04:26 +0200
+
+nvidia-persistenced (470.129.06-1) unstable; urgency=medium
+
+  [ Andreas Beckmann ]
+  * New upstream release.
+  * Add salsa-ci.yml.
+  * Fix bashism in initscript.
+  * Bump Standards-Version to 4.6.1. No changes needed.
+  * Update Lintian overrides.
+
+  [ Luca Boccassi ]
+  * Add patch to fix manpage build reproducibility.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 27 Jun 2022 19:23:03 +0200
+
+nvidia-persistenced (470.103.01-2~deb11u1) bullseye; urgency=medium
+
+  * Rebuild for bullseye.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 20 Mar 2022 23:42:14 +0100
+
+nvidia-persistenced (470.103.01-2) unstable; urgency=medium
+
+  * Drop alternative dependency on libnvidia-tesla-460-cfg1.
+    (EoL, switch to libnvidia-tesla-470-cfg1.)
+  * Add libnvidia-tesla-510-cfg1 as alternative dependency.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 16 Mar 2022 12:49:33 +0100
+
+nvidia-persistenced (470.103.01-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 08 Feb 2022 12:25:41 +0100
+
+nvidia-persistenced (470.82.00-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.6.0. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 08 Nov 2021 11:27:53 +0100
+
+nvidia-persistenced (470.57.02-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add libnvidia-tesla-{470,460}-cfg1 as alternative dependencies.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 02 Aug 2021 13:06:55 +0200
+
+nvidia-persistenced (460.32.03-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Restore hardening flags.
+
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 15 Jan 2021 14:28:03 +0100
+
+nvidia-persistenced (455.45.01-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump watch version to 4. No changes needed.
+  * Bump Standards-Version to 4.5.1. No changes needed.
+  * Update Lintian overrides.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 06 Jan 2021 16:37:12 +0100
+
+nvidia-persistenced (450.57-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Build against libtirpc-dev.
+  * Switch to debhelper-compat (= 13).
+  * Build for arm64.
+  * Update Lintian overrides.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 23 Jul 2020 17:06:40 +0200
+
+nvidia-persistenced (440.44-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 30 Jan 2020 00:37:19 +0100
+
+nvidia-persistenced (435.21-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.5.0. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 22 Jan 2020 20:18:24 +0100
+
+nvidia-persistenced (430.64-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Build for ppc64el.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 14 Nov 2019 22:35:11 +0100
+
+nvidia-persistenced (430.50-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.4.1. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 15 Oct 2019 13:46:53 +0200
+
+nvidia-persistenced (418.56-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 22 Apr 2019 16:15:55 +0200
+
+nvidia-persistenced (415.27-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 20 Apr 2019 05:44:34 +0200
+
+nvidia-persistenced (410.104-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Adjust libnvidia-cfg1 dependencies to automatically switch to the legacy
+    package on upgrades from stretch to buster on [!amd64].
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 25 Mar 2019 18:07:00 +0100
+
+nvidia-persistenced (410.93-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upstream now builds reproducibly.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 11 Feb 2019 18:23:51 +0100
+
+nvidia-persistenced (396.54-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Switch to debhelper-compat (= 12).
+  * Drop Breaks+Replaces against packages predating jessie.
+  * Start nvidia-persistenced as a regular service, thanks to Cédric Dufour.
+    (Closes: #915381)
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 09 Feb 2019 15:01:38 +0100
+
+nvidia-persistenced (390.87-1~deb9u1) stretch; urgency=medium
+
+  * Rebuild for stretch.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 05 Feb 2019 23:11:08 +0100
+
+nvidia-persistenced (390.87-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.3.0. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Thu, 17 Jan 2019 22:45:48 +0100
+
+nvidia-persistenced (390.25-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add debian/upstream/metadata.
+  * Fix new Lintian issues.
+  * Switch Vcs-* URLs to salsa.debian.org.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 06 Mar 2018 04:13:59 +0100
+
+nvidia-persistenced (384.111-1~deb9u1) stretch; urgency=medium
+
+  * Rebuild for stretch.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 26 Feb 2018 00:36:01 +0100
+
+nvidia-persistenced (384.111-1) unstable; urgency=medium
+
+  * New upstream release.
+  * B-D: dpkg-dev (>= 1.18.8) for SOURCE_DATE_EPOCH in pkg-info.mk.
+  * Bump Standards-Version to 4.1.3. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 13 Jan 2018 18:40:41 +0100
+
+nvidia-persistenced (384.98-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Updated nvidia-persistenced to initialize nvidia-modeset.ko in
+      addition to nvidia.ko when setting persistence mode.
+  * Use https:// URL in the watch file.
+  * Bump Standards-Version to 4.1.1. No changes needed.
+  * Set Rules-Requires-Root: no.
+  * Use dpkg makefile snippets instead of manual changelog parsing.
+  * Use a fixed OUTPUTDIR for improved reproducibility.
+
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 17 Nov 2017 02:50:48 +0100
+
+nvidia-persistenced (375.26-2) unstable; urgency=medium
+
+  * Add Depends: libnvidia-cfg1 | libnvidia-cfg1-any, thanks to Gero Müller.
+  * Do not build for ppc64el which does not have a curent driver packaged.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 18 Jan 2017 16:16:20 +0100
+
+nvidia-persistenced (375.26-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Switch to debhelper compat level 10.
+
+ -- Andreas Beckmann <anbe@debian.org>  Fri, 13 Jan 2017 03:21:35 +0100
+
+nvidia-persistenced (367.57-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fixed a bug in nvidia-persistenced that caused it to incorrectly delete
+      the PID file if a second instance of the daemon is started.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 15 Oct 2016 16:28:30 +0200
+
+nvidia-persistenced (367.44-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Changed the behavior of nvidia-persistenced to enable persistence mode
+      by default for all GPUs when the daemon is started.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 08 Oct 2016 15:10:39 +0200
+
+nvidia-persistenced (367.18-1) unstable; urgency=medium
+
+  * New upstream release.
+    * Allows overriding the stripping options.
+  * Enable more hardening.
+
+ -- Andreas Beckmann <anbe@debian.org>  Mon, 30 May 2016 09:53:44 +0200
+
+nvidia-persistenced (364.15-2) unstable; urgency=medium
+
+  * Multi-Arch: foreign, not allowed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 19 Apr 2016 23:45:13 +0200
+
+nvidia-persistenced (364.15-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Mark as Multi-Arch: allowed.
+  * Simplify rules and clean up properly.
+  * Fix upstream build system to allow creation of unstripped binaries.
+  * Bump Standards-Version to 3.9.8. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Tue, 19 Apr 2016 23:24:39 +0200
+
+nvidia-persistenced (361.28-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Build for ppc64el.
+  * Update Vcs-Git URL.
+  * Bump Standards-Version to 3.9.7. No changes needed.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 17 Feb 2016 01:15:17 +0100
+
+nvidia-persistenced (358.09-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix Vcs-Browser URL.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 08 Nov 2015 02:22:34 +0100
+
+nvidia-persistenced (352.21-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update d/copyright: Upstream source is consistently licensed under Expat
+    since 349.12, previously common-utils/* was under GPL-2.
+  * d/rules: Make the build reproducible by using deterministic timestamp,
+    user and hostname strings to be included in the binary. Based on patch for
+    nvidia-settings by Jérémy Bobbio.
+
+ -- Andreas Beckmann <anbe@debian.org>  Sun, 21 Jun 2015 17:28:54 +0200
+
+nvidia-persistenced (343.13-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Andreas Beckmann <anbe@debian.org>  Wed, 29 Oct 2014 12:54:27 +0100
